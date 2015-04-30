@@ -124,18 +124,20 @@ nav ul li.m-hide {
     nav ul li {
       float: left;
       width: 100%;
-      border-top: 1px solid #000;
+      border-top: 0;
       border-left: 1px solid #000;
-      border-right: 1px solid #000;
-      border-bottom: 0px; }
+      border-right: 1px solid #000; }
       nav ul li a {
         font-size: 1em; }
-    nav ul li:last-of-type {
-      border-bottom: 1px solid #000; }
+    nav ul li:first-of-type {
+      border-top: 1px solid #000; }
     nav ul li.m-hide {
       display: block; }
 
   .subnav {
+    display: none; }
+
+  .li-a-search {
     display: none; } }
 
 /*# sourceMappingURL=main.css.map */
