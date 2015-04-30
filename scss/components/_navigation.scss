@@ -2,8 +2,6 @@ nav {
 	
 	ul {
 
-
-
 		li {
 			float:left;
 			width:25%;
@@ -19,14 +17,78 @@ nav {
 				text-decoration:none;
 				font-size:0.8em;
 			}
+
+			a.active {
+				color:#FFF;
+				background:#000;
+			}
 		}
 
 		li:last-of-type {
 			border-right:1px solid #000;
 		}
+
+		li.m-hide {
+			display:none;
+		}
 	}
 
 }
+
+
+.subnav {
+	margin-top:45px;
+	width:260px;
+	height:100%;
+	border-right:2px solid #000;
+	position:absolute;
+    margin-left:-260px;
+    /* TODO: add webkit mixin */
+    -webkit-transition:margin-left .5s ease-in-out;
+
+	li {
+		float:left;
+		width:100%;
+		border-left:1px solid #000;
+		border-bottom:1px solid #000;
+
+		a {
+			font-size:1em;
+			display:block;
+			padding:15px 0;
+			padding-left:15px;
+			color:#000;
+			text-decoration:none;
+			font-size:0.8em;
+		}
+	}
+}
+
+.subnav-open {
+	margin-left:0;
+}
+
+.search {	
+	
+	/* TODO: inherit border */
+	/* TODO: user variables for colors etc... */
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	border-bottom:1px solid #000;
+	display:none;
+		
+	input {
+		margin: 20px 5%;
+		width:90%;
+		padding:10px;
+	}
+
+}
+
+.search-open {
+	display:block !important;
+}
+
 
 @media (min-width: 700px) {
 	nav {
@@ -41,6 +103,7 @@ nav {
 				border-top:1px solid #000;
 				border-left:1px solid #000;
 				border-right:1px solid #000;
+				border-bottom:0px;
 
 				a {
 					font-size:1em;
@@ -50,7 +113,15 @@ nav {
 			li:last-of-type {
 				border-bottom:1px solid #000;
 			}
+
+			li.m-hide {
+				display:block;
+			}
 		}
 
+	}
+
+	.subnav {
+		display:none;
 	}
 }
