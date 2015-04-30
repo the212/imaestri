@@ -201,16 +201,6 @@ nav ul li.m-hide {
     letter-spacing: 1px;
     margin-right: 1%;
     margin-bottom: 1%; }
-  .signup-bottom button {
-    background: #957f68;
-    padding: 15px 40px;
-    color: #FFF;
-    border: 1px solid #a3a3a3;
-    cursor: pointer;
-    font-size: 1em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 1%; }
 
 .bottom-show {
   display: block; }
@@ -222,5 +212,15 @@ nav ul li.m-hide {
     margin-bottom: 0; }
   .signup-bottom button {
     margin-bottom: 0; } }
+.join-btn {
+  background: #957f68;
+  padding: 15px 40px;
+  color: #FFF;
+  border: 1px solid #a3a3a3;
+  cursor: pointer;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1%; }
 
 /*# sourceMappingURL=main.css.map */
