@@ -18,12 +18,73 @@
 	margin-left:5%;
 	position:fixed;
 	bottom:0;
-	height:120px;
-	background:rgb(149,127,104);
+	padding:2% 0;
+	background:rgb(242,242,242);
 	z-index:10;
 	display:none;
+	text-align:center;
+
+	input[type="text"] {
+		background: transparent;
+		width:280px;
+		padding: 15px;
+		font-size:1em;
+		border:1px solid rgb(163,163,163);
+		text-transform:uppercase;
+		letter-spacing:1px;
+		margin-right:1%;
+		margin-bottom:1%;
+	}
+
+	select {
+		background: transparent;
+	   	width: 280px;
+	   	padding: 16px;
+	   	font-size:1em;
+	   	line-height: 1;
+	   	border:1px solid rgb(163,163,163);
+	   	border-radius: 0;
+	   	-webkit-appearance: none;
+	   	text-transform:uppercase;
+		letter-spacing:1px;
+		margin-right:1%;
+		margin-bottom:1%;
+	}
+
+	button {
+		background:rgb(149,127,104);
+		padding:15px 40px;
+		color:#FFF;
+		border:1px solid rgb(163,163,163);
+		cursor:pointer;
+		font-size:1em;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		margin-bottom:1%;
+	}
+
 }
 
 .bottom-show {
 	display:block
 }
+
+
+@media (min-width: 700px) { 
+	.signup-bottom {
+
+		input[type="text"] {
+			margin-bottom:0;
+		}
+
+		select {
+			margin-bottom:0;
+		}
+
+		button {
+			margin-bottom:0;
+		}
+
+	}
+}
+
