@@ -1,5 +1,9 @@
 /*************************************
+****** colors ******************/
+/*************************************
 ****** _typography ******************/
+/*************************************
+******** Branding ********************/
 /*************************************
 ****** _borders ******************/
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -71,9 +75,9 @@ header {
 nav ul li {
   float: left;
   width: 25%;
-  border-top: 1px solid #000;
-  border-left: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-top: 1px solid #333333;
+  border-left: 1px solid #333333;
+  border-bottom: 1px solid #333333;
   text-align: center; }
   nav ul li a {
     display: block;
@@ -82,10 +86,10 @@ nav ul li {
     text-decoration: none;
     font-size: 0.7em; }
   nav ul li a.active {
-    color: #FFF;
-    background: #000; }
+    color: #957f68;
+    background: #333333; }
 nav ul li:last-of-type {
-  border-right: 1px solid #000; }
+  border-right: 1px solid #333333; }
 nav ul li.m-hide {
   display: none; }
 
@@ -93,7 +97,7 @@ nav ul li.m-hide {
   margin-top: 42px;
   width: 260px;
   height: 100%;
-  border-right: 2px solid #000;
+  border-right: 2px solid #333333;
   position: absolute;
   margin-left: -260px;
   /* TODO: add webkit mixin */
@@ -101,8 +105,8 @@ nav ul li.m-hide {
   .subnav li {
     float: left;
     width: 100%;
-    border-left: 1px solid #000;
-    border-bottom: 1px solid #000; }
+    border-left: 1px solid #333333;
+    border-bottom: 1px solid #333333; }
     .subnav li a {
       font-size: 1em;
       display: block;
@@ -118,9 +122,9 @@ nav ul li.m-hide {
 .search {
   /* TODO: inherit border */
   /* TODO: user variables for colors etc... */
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-left: 1px solid #333333;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
   display: none; }
   .search input {
     margin: 20px 5%;
@@ -137,12 +141,12 @@ nav ul li.m-hide {
       float: left;
       width: 100%;
       border-top: 0;
-      border-left: 1px solid #000;
-      border-right: 1px solid #000; }
+      border-left: 1px solid #333333;
+      border-right: 1px solid #333333; }
       nav ul li a {
         font-size: 1em; }
     nav ul li:first-of-type {
-      border-top: 1px solid #000; }
+      border-top: 1px solid #333333; }
     nav ul li.m-hide {
       display: block; }
 

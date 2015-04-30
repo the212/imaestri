@@ -1,13 +1,33 @@
 /*************************************
+****** colors ******************/
+
+$light-grey: rgb(163,163,163);
+$middle-grey: rgb(242,242,242);
+$dark-grey: rgb(51,51,51);
+$gold: rgb(149,127,104);
+
+
+/*************************************
 ****** _typography ******************/
 
 $font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
-$second-color: #666;
-$active-color: #999;
+$primary-txt-color: $dark-grey;
+$second-txt-color: $light-grey;
+$active-txt-color: $gold;
+
+
+/*************************************
+******** Branding ********************/
+
+$primary-bg-color: white;
+$second-bg-color: $dark-grey; 
+$third-bg-color: $light-grey;
 
 
 /*************************************
 ****** _borders ******************/
-$border-color: #000;
+
+$primary-border-color: $dark-grey;
+$second-border-color: $light-grey; 
+
 

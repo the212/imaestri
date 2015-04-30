@@ -5,9 +5,9 @@ nav {
 		li {
 			float:left;
 			width:25%;
-			border-top:1px solid $border-color;
-			border-left:1px solid $border-color;
-			border-bottom:1px solid $border-color;
+			border-top:1px solid $primary-border-color;
+			border-left:1px solid $primary-border-color;
+			border-bottom:1px solid $primary-border-color;
 			text-align:center;
 
 			a {
@@ -19,13 +19,13 @@ nav {
 			}
 
 			a.active {
-				color:#FFF;
-				background:#000;
+				color: $gold;
+				background: $dark-grey;
 			}
 		}
 
 		li:last-of-type {
-			border-right:1px solid $border-color;
+			border-right:1px solid $primary-border-color;
 		}
 
 		li.m-hide {
@@ -40,7 +40,7 @@ nav {
 	margin-top:42px;
 	width:260px;
 	height:100%;
-	border-right:2px solid $border-color;
+	border-right:2px solid $primary-border-color;
 	position:absolute;
     margin-left:-260px;
     /* TODO: add webkit mixin */
@@ -49,8 +49,8 @@ nav {
 	li {
 		float:left;
 		width:100%;
-		border-left:1px solid $border-color;
-		border-bottom:1px solid $border-color;
+		border-left:1px solid $primary-border-color;
+		border-bottom:1px solid $primary-border-color;
 
 		a {
 			font-size:1em;
@@ -72,9 +72,9 @@ nav {
 	
 	/* TODO: inherit border */
 	/* TODO: user variables for colors etc... */
-	border-left:1px solid $border-color;
-	border-right:1px solid $border-color;
-	border-bottom:1px solid $border-color;
+	border-left:1px solid $primary-border-color;
+	border-right:1px solid $primary-border-color;
+	border-bottom:1px solid $primary-border-color;
 	display:none;
 		
 	input {
@@ -101,8 +101,8 @@ nav {
 				float:left;
 				width:100%;
 				border-top:0;
-				border-left:1px solid $border-color;
-				border-right:1px solid $border-color;
+				border-left:1px solid $primary-border-color;
+				border-right:1px solid $primary-border-color;
 
 				a {
 					font-size:1em;
@@ -110,7 +110,7 @@ nav {
 			}
 
 			li:first-of-type {
-				border-top:1px solid $border-color;
+				border-top:1px solid $primary-border-color;
 			}
 
 			li.m-hide {

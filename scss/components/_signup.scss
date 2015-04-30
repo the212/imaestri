@@ -19,7 +19,7 @@
 	position:fixed;
 	bottom:0;
 	padding:2% 0;
-	background:rgb(242,242,242);
+	background: $middle-grey;
 	z-index:10;
 	display:none;
 	text-align:center;
@@ -29,7 +29,7 @@
 		width:280px;
 		padding: 15px;
 		font-size:1em;
-		border:1px solid rgb(163,163,163);
+		border:1px solid $second-border-color;
 		text-transform:uppercase;
 		letter-spacing:1px;
 		margin-right:1%;
@@ -42,7 +42,7 @@
 	   	padding: 16px;
 	   	font-size:1em;
 	   	line-height: 1;
-	   	border:1px solid rgb(163,163,163);
+	   	border:1px solid $second-border-color;
 	   	border-radius: 0;
 	   	-webkit-appearance: none;
 	   	text-transform:uppercase;
@@ -52,10 +52,10 @@
 	}
 
 	button {
-		background:rgb(149,127,104);
+		background: $gold;
 		padding:15px 40px;
 		color:#FFF;
-		border:1px solid rgb(163,163,163);
+		border:1px solid $second-border-color;
 		cursor:pointer;
 		font-size:1em;
 		text-transform:uppercase;
