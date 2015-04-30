@@ -139,5 +139,29 @@ nav ul li.m-hide {
 
   .li-a-search {
     display: none; } }
+.container {
+  width: 90%;
+  height: 1300px;
+  margin: 0 auto;
+  background-size: cover; }
+
+.c1 {
+  background: url("../images/imaestri1.png") no-repeat top center; }
+
+.c2 {
+  background: url("../images/imaestri2.png") no-repeat top center; }
+
+.signup-bottom {
+  width: 90%;
+  margin-left: 5%;
+  position: fixed;
+  bottom: 0;
+  height: 120px;
+  background: #957f68;
+  z-index: 10;
+  display: none; }
+
+.bottom-show {
+  display: block; }
 
 /*# sourceMappingURL=main.css.map */
