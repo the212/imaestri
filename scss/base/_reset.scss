@@ -46,3 +46,12 @@ table {
      -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
      box-sizing: border-box; /* IE */
 }
+
+/* no blue border on inputs */
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+*:focus {
+    outline: 0;
+}
