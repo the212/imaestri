@@ -3,25 +3,31 @@ $(function() {
 	/******************************************
 	********* Primary Nav ******************/
 	$('.nav-trigger').click(function() {
-		$('.primarynav').toggleClass('primarynav-open');
+		$('.pnav').toggleClass('pnav-open');
 	});
 
-	$('.primarynav li a').click(function() {
-		$('.primarynav').toggleClass('primarynav-tall');
-		$(this).siblings('.primarynav-l2').toggleClass('primarynav-l2-open');
+	$('.pnav-li-a').click(function() {
+		$('.pnav').toggleClass('pnav-tall');
+		$(this).siblings('.pnav-l2').toggleClass('pnav-l2-open');
+		console.log("IN pnav-li a click" );
 	});
 
-	$('.primarynav-l2 li a').click(function() {
-		$(this).siblings('.primarynav-l3').addClass('primarynav-l3-open');
-	});
+	/* TODO: fix window width + add resize */
+	if ($(window).width() < 700) {
 
-	$('.l2-back').click(function() {
-		$('.primarynav-l2').removeClass('primarynav-l2-open');
-	});
+		$('.pnav-l2-li-a').click(function() {
+			$(this).siblings('.pnav-l3').addClass('pnav-l3-open');
+			console.log("IN pnav-l2-li a click" );
+		});
 
-	$('.l3-back').click(function() {
-		$('.primarynav-l3').removeClass('primarynav-l3-open');
-	});
+		$('.l2-back').click(function() {
+			$('.pnav-l2').removeClass('pnav-l2-open');
+		});
+
+		$('.l3-back').click(function() {
+			$('.pnav-l3').removeClass('pnav-l3-open');
+		});
+	}
 
 
 	/******************************************
