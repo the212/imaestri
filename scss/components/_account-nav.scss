@@ -13,12 +13,12 @@ nav {
 			a {
 				display:block;
 				padding:15px 0;
-				color:#000;
+				color:$dark-grey;
 				text-decoration:none;
 				font-size:0.7em;
 			}
 
-			a.active {
+			a:hover, a.active {
 				color: $gold;
 				background: $dark-grey;
 			}
@@ -39,8 +39,7 @@ nav {
 	border-right:2px solid $primary-border-color;
 	position:absolute;
     margin-left:-260px;
-    /* TODO: add webkit mixin */
-    -webkit-transition:margin-left .5s ease-in-out;
+    @include transition(margin-left, .5s, ease-in-out);
     z-index:10;
 
 	li {
@@ -54,9 +53,14 @@ nav {
 			display:block;
 			padding:15px 0;
 			padding-left:15px;
-			color:#000;
+			color:$dark-grey;
 			text-decoration:none;
 			font-size:0.8em;
+		}
+
+		a:hover {
+			background:$dark-grey;
+			color:$gold;
 		}
 	}
 }

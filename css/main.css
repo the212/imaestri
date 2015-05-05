@@ -6,6 +6,17 @@
 ******** Branding ********************/
 /*************************************
 ****** _borders ******************/
+/*****************************************
+***** mobile & desktop show vs. hide *****/
+.m-hide {
+  display: none; }
+
+@media (min-width: 700px) {
+  .m-hide {
+    display: block; }
+
+  .d-hide {
+    display: none; } }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -44,7 +55,7 @@ table {
   border-spacing: 0; }
 
 a:link, a:hover, a:active, a:visited {
-  color: #000; }
+  color: #333333; }
 
 /* Box Model Hack */
 * {
@@ -71,9 +82,17 @@ body {
 h1 {
   font-size: 2em; }
 
-/* TODO: move to different SASS partial */
-.m-hide {
-  display: none; }
+.logo {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  left: 50%;
+  margin-left: -125px;
+  text-align: center;
+  z-index: 100000000;
+  margin-top: 24px;
+  letter-spacing: 4px;
+  font-size: 2.4em; }
 
 header {
   height: 100px; }
@@ -88,11 +107,21 @@ header {
   /* TODO: variables for z-index levels */
   z-index: 100;
   text-align: center; }
-  .pnav li a, .pnav-l2 li a, .pnav-l3 li a {
-    display: block;
-    padding: 15px;
-    border-bottom: 1px solid #333333;
-    text-decoration: none; }
+  .pnav li, .pnav-l2 li, .pnav-l3 li {
+    /** TODO: use inherit for hover a ***/
+    /**** TODO: fix this inherit problem... I don't want this 
+    rule going to child elemets... *******/
+    /* 
+    a:hover {
+    	background:$dark-grey;
+    	color:$gold;
+    }
+    */ }
+    .pnav li a, .pnav-l2 li a, .pnav-l3 li a {
+      display: block;
+      padding: 15px;
+      border-bottom: 1px solid #333333;
+      text-decoration: none; }
 
 .pnav-open {
   /* TODO: Fix fixed heights */
@@ -101,6 +130,11 @@ header {
 
 .pnav-l2, .pnav-l3 {
   display: none; }
+
+/** TODO: use inherit for hover a ***/
+.l2-back, .l3-back {
+  background: #333333;
+  color: #957f68 !important; }
 
 .pnav-l2-open, .pnav-l3-open {
   display: block;
@@ -113,12 +147,6 @@ header {
   z-index: 10000; }
 
 @media (min-width: 700px) {
-  .m-hide {
-    display: block; }
-
-  .d-hide {
-    display: none; }
-
   .pnav {
     position: fixed;
     top: 0;
@@ -131,6 +159,9 @@ header {
         border-bottom: 0; }
     .pnav li.li-right {
       float: right; }
+
+  .pnav-li-a {
+    margin-top: 20px; }
 
   .pnav-tall {
     height: 1000px;
@@ -156,19 +187,26 @@ header {
     /* TODO: clear clear class and reuse */
     clear: both; }
 
+  .pnav-l2-li-a {
+    color: #957f68 !important; }
+
   .pnav-l3 {
     display: block;
     height: auto;
     text-align: left;
     position: relative;
-    top: 0; }
+    top: 0;
+    margin-left: 15px; }
     .pnav-l3 li {
       clear: both;
       display: block;
-      width: 100%; }
+      width: 90%;
+      border-right: 1px solid #333333; }
       .pnav-l3 li a {
         padding: 10px 0;
         font-size: 12px; }
+      .pnav-l3 li a:hover {
+        color: #957f68; }
     .pnav-l3 li:first-of-type {
       height: 0; }
     .pnav-l3 li:last-of-type {
@@ -186,10 +224,10 @@ nav ul li {
   nav ul li a {
     display: block;
     padding: 15px 0;
-    color: #000;
+    color: #333333;
     text-decoration: none;
     font-size: 0.7em; }
-  nav ul li a.active {
+  nav ul li a:hover, nav ul li a.active {
     color: #957f68;
     background: #333333; }
 nav ul li:last-of-type {
@@ -202,8 +240,11 @@ nav ul li:last-of-type {
   border-right: 2px solid #333333;
   position: absolute;
   margin-left: -260px;
-  /* TODO: add webkit mixin */
-  -webkit-transition: margin-left .5s ease-in-out;
+  -webkit-transition: margin-left 0.5s ease-in-out;
+  -moz-transition: margin-left 0.5s ease-in-out;
+  -ms-transition: margin-left 0.5s ease-in-out;
+  -o-transition: margin-left 0.5s ease-in-out;
+  transition: margin-left 0.5s ease-in-out;
   z-index: 10; }
   .subnav li {
     float: left;
@@ -215,9 +256,12 @@ nav ul li:last-of-type {
       display: block;
       padding: 15px 0;
       padding-left: 15px;
-      color: #000;
+      color: #333333;
       text-decoration: none;
       font-size: 0.8em; }
+    .subnav li a:hover {
+      background: #333333;
+      color: #957f68; }
 
 .subnav-open {
   margin-left: 0; }

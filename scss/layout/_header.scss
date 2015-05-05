@@ -1,157 +1,16 @@
-/* TODO: move to different SASS partial */
-.m-hide {
-	display:none;
+.logo {
+	position:absolute;
+	top:0;
+	width:250px;
+	left:50%;
+	margin-left:-125px;
+	text-align:center;
+	z-index:100000000;
+	margin-top:24px;
+	letter-spacing:4px;
+	font-size:2.4em;
 }
-
-.d-hide {
-}
-
 
 header {
-
 	height:100px;
-
 }
-
-.pnav, .pnav-l2, .pnav-l3 { 
-	width:100%;
-	overflow:hidden;
-	position:absolute;
-	top:100px;
-	height:0;
-	background:#FFF;
-    /* TODO: variables for z-index levels */
-    z-index:100;
-    text-align:center;
-
-	li {
-		
-		a {
-			display:block;
-			padding:15px;
-			border-bottom:1px solid $primary-border-color;
-			text-decoration:none;
-		}	
-	}
-
-}
-
-.pnav-open {
-	/* TODO: Fix fixed heights */
-	min-height:600px;
-	border-top:1px solid $primary-border-color;
-}
-
-.pnav-l2, .pnav-l3 {
-	display:none;
-}
-
-.pnav-l2-open, .pnav-l3-open {
-	display:block;
-	height:auto;
-	position:absolute;
-	top:0 !important;
-	z-index:1000;
-}
-
-.pnav-l3-open {
-	z-index:10000;
-}
-
-@media (min-width: 700px) {
-
-	.m-hide {
-		display:block;
-	}
-
-	.d-hide {
-		display:none;
-	}
-
-	.pnav {
-		position:fixed;
-		top:0;
-		height:100px;
-		border-top:0;
-
-		li {
-			float:left;
-
-			a {
-				text-decoration:none;
-				border-bottom:0;
-			}
-		}
-
-		li.li-right {
-			float:right;
-		}
-
-	}
-
-	.pnav-tall {
-		height:1000px;
-		border-bottom:2px solid #000;
-	}
-
-	.pnav-l2-open {
-		display:block;
-		height:900px;
-		position:absolute;
-		top:100px !important;
-		z-index:1000;
-	}
-
-	.pnav-l2 {
-
-		text-align:left;
-	}
-
-	.pnav-l2-li {
-		width:25%;
-	}
-
-	.pnav-l2-li:first-of-type {
-		width:0;
-	}
-
-	.pnav-l2-li-clear {
-		/* TODO: clear clear class and reuse */
-		clear:both;
-	}
-
-	.pnav-l3 {
-		display:block;
-		height:auto;
-		text-align:left;
-		position:relative;
-		top:0;
-
-		li {
-			clear: both;
-			display:block;
-			width:100%;
-
-			a {
-				padding:10px 0;
-				font-size:12px;
-			}
-		}
-
-		li:first-of-type {
-			height:0;
-		}
-
-		li:last-of-type {
-			margin-bottom:20px;
-		}
-	}
-
-	.l2-back, .l3-back {
-		display:none !important;
-	}
-
-
-
-}
-

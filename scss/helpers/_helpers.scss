@@ -1,0 +1,16 @@
+/*****************************************
+***** mobile & desktop show vs. hide *****/
+.m-hide {
+	display:none;
+}
+
+@media (min-width: 700px) {
+
+	.m-hide {
+		display:block;
+	}
+
+	.d-hide {
+		display:none;
+	}
+}
