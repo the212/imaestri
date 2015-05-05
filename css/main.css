@@ -95,7 +95,8 @@ header {
     text-decoration: none; }
 
 .pnav-open {
-  height: auto;
+  /* TODO: Fix fixed heights */
+  min-height: 600px;
   border-top: 1px solid #333333; }
 
 .pnav-l2, .pnav-l3 {
@@ -150,6 +151,10 @@ header {
 
   .pnav-l2-li:first-of-type {
     width: 0; }
+
+  .pnav-l2-li-clear {
+    /* TODO: clear clear class and reuse */
+    clear: both; }
 
   .pnav-l3 {
     display: block;
