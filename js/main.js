@@ -7,7 +7,7 @@ $(function() {
 	});
 
 	$('.primarynav li a').click(function() {
-		$(this).siblings('.primarynav-l2').addClass('primarynav-l2-open');
+		$(this).siblings('.primarynav-l2').toggleClass('primarynav-l2-open');
 	});
 
 	$('.primarynav-l2 li a').click(function() {

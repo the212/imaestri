@@ -16,7 +16,6 @@ header {
 .primarynav, .primarynav-l2, .primarynav-l3 { 
 	width:100%;
 	overflow:hidden;
-	background:#FFF;
 	position:absolute;
 	top:100px;
 	height:0;
@@ -72,7 +71,9 @@ primarynav-l3-open {
 	.primarynav {
 		position:fixed;
 		top:0;
-		height:auto;
+		height:500px;
+		background:#FFF;
+		border-bottom:2px solid #000;
 		border-top:0;
 
 		li {
@@ -85,7 +86,31 @@ primarynav-l3-open {
 			}
 		}
 
+		li.li-right {
+			float:right;
+		}
+
 	}
+
+	.primarynav-l2-open {
+		display:block;
+		height:auto;
+		position:absolute;
+		top:100px !important;
+		z-index:1000;
+	}
+
+	.primarynav-l2-open .primarynav-l3 {
+		display:block;
+		height:auto;
+		overflow:auto !important;
+	}
+
+	.l2-back {
+		display:none !important;
+	}
+
+
 
 }
 
