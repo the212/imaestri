@@ -5,7 +5,7 @@ function initNav() {
 		$('.pnav').toggleClass('pnav-open');
 	});
 
-	$('.pnav-li-a').click(function() {
+	$('.pnav-li-products').click(function() {
 		$('.pnav').toggleClass('pnav-tall');
 		$(this).siblings('.pnav-l2').toggleClass('pnav-l2-open');
 	});
