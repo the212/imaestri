@@ -107,21 +107,11 @@ header {
   /* TODO: variables for z-index levels */
   z-index: 100;
   text-align: center; }
-  .pnav li, .pnav-l2 li, .pnav-l3 li {
-    /** TODO: use inherit for hover a ***/
-    /**** TODO: fix this inherit problem... I don't want this 
-    rule going to child elemets... *******/
-    /* 
-    a:hover {
-    	background:$dark-grey;
-    	color:$gold;
-    }
-    */ }
-    .pnav li a, .pnav-l2 li a, .pnav-l3 li a {
-      display: block;
-      padding: 15px;
-      border-bottom: 1px solid #333333;
-      text-decoration: none; }
+  .pnav li a, .pnav-l2 li a, .pnav-l3 li a {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #333333;
+    text-decoration: none; }
 
 .pnav-open {
   /* TODO: Fix fixed heights */
