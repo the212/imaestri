@@ -344,7 +344,8 @@ nav ul li:last-of-type {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-right: 1%;
-    margin-bottom: 1%; }
+    margin-bottom: 1%;
+    cursor: pointer; }
 
 .bottom-show {
   display: block; }

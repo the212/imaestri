@@ -1,7 +1,6 @@
-$(function() {
-
-	/******************************************
-	********* Primary Nav ******************/
+/******************************************
+********* Primary Nav ******************/
+function initNav() {
 	$('.nav-trigger').click(function() {
 		$('.pnav').toggleClass('pnav-open');
 	});
@@ -10,10 +9,10 @@ $(function() {
 		$('.pnav').toggleClass('pnav-tall');
 		$(this).siblings('.pnav-l2').toggleClass('pnav-l2-open');
 	});
+}
 
-	/* TODO: fix window width + add resize */
+function mobileNav() {
 	if ($(window).width() < 700) {
-
 		$('.pnav-l2-li-a').click(function() {
 			$(this).siblings('.pnav-l3').addClass('pnav-l3-open');
 		});
@@ -26,6 +25,18 @@ $(function() {
 			$('.pnav-l3').removeClass('pnav-l3-open');
 		});
 	}
+}
+
+$(function() {
+
+	/******************************************
+	********* Primary Nav ******************/
+	initNav();
+	mobileNav();
+
+	$( window ).resize(function() {
+		mobileNav();
+	});
 
 
 	/******************************************
