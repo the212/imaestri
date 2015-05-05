@@ -27,10 +27,6 @@ nav {
 		li:last-of-type {
 			border-right:1px solid $primary-border-color;
 		}
-
-		li.m-hide {
-			display:none;
-		}
 	}
 
 }
@@ -45,6 +41,7 @@ nav {
     margin-left:-260px;
     /* TODO: add webkit mixin */
     -webkit-transition:margin-left .5s ease-in-out;
+    z-index:10;
 
 	li {
 		float:left;
@@ -70,16 +67,14 @@ nav {
 
 .search {	
 	
-	/* TODO: inherit border */
-	/* TODO: user variables for colors etc... */
 	border-left:1px solid $primary-border-color;
 	border-right:1px solid $primary-border-color;
 	border-bottom:1px solid $primary-border-color;
 	display:none;
 		
 	input {
-		margin: 20px 5%;
-		width:90%;
+		margin: 4%;
+		width: 92%;
 		padding:10px;
 	}
 
@@ -113,8 +108,8 @@ nav {
 				border-top:1px solid $primary-border-color;
 			}
 
-			li.m-hide {
-				display:block;
+			li.d-hide-2 {
+				border-top:1px solid $primary-border-color;
 			}
 		}
 

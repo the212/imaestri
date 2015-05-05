@@ -43,6 +43,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+a:link, a:hover, a:active, a:visited {
+  color: #000; }
+
 /* Box Model Hack */
 * {
   -moz-box-sizing: border-box;
@@ -68,11 +71,66 @@ body {
 h1 {
   font-size: 2em; }
 
-header {
-  text-align: center; }
-  header h1 {
-    padding: 5%; }
+/* TODO: move to different SASS partial */
+.m-hide {
+  display: none; }
 
+header {
+  height: 100px; }
+
+.primarynav, .primarynav-l2, .primarynav-l3 {
+  width: 100%;
+  overflow: hidden;
+  background: #FFF;
+  position: absolute;
+  top: 100px;
+  height: 0;
+  /* TODO: add webkit mixin */
+  -webkit-transition: height .5s ease-in-out;
+  /* TODO: variables for z-index levels */
+  z-index: 100;
+  text-align: center; }
+  .primarynav li a, .primarynav-l2 li a, .primarynav-l3 li a {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #333333;
+    text-decoration: none; }
+
+.primarynav-open {
+  height: auto;
+  border-top: 1px solid #333333; }
+
+.primarynav-l2, .primarynav-l3 {
+  display: none; }
+
+.primarynav-l2-open, .primarynav-l3-open {
+  display: block;
+  height: auto;
+  position: absolute;
+  top: 0 !important;
+  z-index: 1000; }
+
+primarynav-l3-open {
+  z-index: 10000; }
+
+@media (min-width: 700px) {
+  .m-hide {
+    display: block; }
+
+  .d-hide {
+    display: none; }
+
+  .primarynav {
+    position: fixed;
+    top: 0;
+    height: auto;
+    border-top: 0; }
+    .primarynav li {
+      float: left;
+      margin-top: 20px; }
+      .primarynav li a {
+        text-decoration: none;
+        border-bottom: 0; } }
 nav ul li {
   float: left;
   width: 25%;
@@ -91,8 +149,6 @@ nav ul li {
     background: #333333; }
 nav ul li:last-of-type {
   border-right: 1px solid #333333; }
-nav ul li.m-hide {
-  display: none; }
 
 .subnav {
   margin-top: 42px;
@@ -102,7 +158,8 @@ nav ul li.m-hide {
   position: absolute;
   margin-left: -260px;
   /* TODO: add webkit mixin */
-  -webkit-transition: margin-left .5s ease-in-out; }
+  -webkit-transition: margin-left .5s ease-in-out;
+  z-index: 10; }
   .subnav li {
     float: left;
     width: 100%;
@@ -121,15 +178,13 @@ nav ul li.m-hide {
   margin-left: 0; }
 
 .search {
-  /* TODO: inherit border */
-  /* TODO: user variables for colors etc... */
   border-left: 1px solid #333333;
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
   display: none; }
   .search input {
-    margin: 20px 5%;
-    width: 90%;
+    margin: 4%;
+    width: 92%;
     padding: 10px; }
 
 .search-open {
@@ -148,8 +203,8 @@ nav ul li.m-hide {
         font-size: 1em; }
     nav ul li:first-of-type {
       border-top: 1px solid #333333; }
-    nav ul li.m-hide {
-      display: block; }
+    nav ul li.d-hide-2 {
+      border-top: 1px solid #333333; }
 
   .subnav {
     display: none; }
