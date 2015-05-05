@@ -7,6 +7,7 @@ $(function() {
 	});
 
 	$('.primarynav li a').click(function() {
+		$('.primarynav').toggleClass('primarynav-tall');
 		$(this).siblings('.primarynav-l2').toggleClass('primarynav-l2-open');
 	});
 

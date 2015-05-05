@@ -84,8 +84,7 @@ header {
   position: absolute;
   top: 100px;
   height: 0;
-  /* TODO: add webkit mixin */
-  -webkit-transition: height .5s ease-in-out;
+  background: #FFF;
   /* TODO: variables for z-index levels */
   z-index: 100;
   text-align: center; }
@@ -109,7 +108,7 @@ header {
   top: 0 !important;
   z-index: 1000; }
 
-primarynav-l3-open {
+.primarynav-l3-open {
   z-index: 10000; }
 
 @media (min-width: 700px) {
@@ -122,9 +121,7 @@ primarynav-l3-open {
   .primarynav {
     position: fixed;
     top: 0;
-    height: 500px;
-    background: #FFF;
-    border-bottom: 2px solid #000;
+    height: 100px;
     border-top: 0; }
     .primarynav li {
       float: left;
@@ -135,19 +132,21 @@ primarynav-l3-open {
     .primarynav li.li-right {
       float: right; }
 
+  .primarynav-tall {
+    height: 800px; }
+
   .primarynav-l2-open {
     display: block;
-    height: auto;
+    height: 500px;
     position: absolute;
     top: 100px !important;
     z-index: 1000; }
 
-  .primarynav-l2-open .primarynav-l3 {
+  .primarynav-l3 {
     display: block;
-    height: auto;
-    overflow: auto !important; }
+    height: auto; }
 
-  .l2-back {
+  .l2-back, .l3-back {
     display: none !important; } }
 nav ul li {
   float: left;
