@@ -113,6 +113,9 @@ header {
     border-bottom: 1px solid #333333;
     text-decoration: none; }
 
+.pnav-l3 li:last-of-type {
+  padding-bottom: 500px; }
+
 .pnav-open {
   /* TODO: Fix fixed heights */
   min-height: 600px;
@@ -200,7 +203,8 @@ header {
     .pnav-l3 li:first-of-type {
       height: 0; }
     .pnav-l3 li:last-of-type {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      padding-bottom: 0; }
 
   .l2-back, .l3-back {
     display: none !important; } }
