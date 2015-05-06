@@ -96,6 +96,9 @@ h1 {
 
 header {
   height: 100px; }
+  header .nav-trigger {
+    display: inline-block;
+    padding: 35px 20px; }
 
 .pnav, .pnav-l2, .pnav-l3 {
   width: 100%;
