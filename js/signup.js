@@ -1,21 +1,30 @@
+var bottom = false;
+
 $(function() {
 
 	var lastScrollTop = 0;
 	
 	$(window).scroll(function() {
-	   if($(window).scrollTop() + $(window).height() == $(document).height()) {
 
-	   	$('.signup-bottom').addClass('bottom-show');
+		var st = $(this).scrollTop();
+	   	if (st > lastScrollTop){
+	       // downscroll code
+	       $('.signup-bottom').removeClass('bottom-show');
+	   	} else {
+	    	// upscroll code
+	    	if (bottom == true) {
+	      		$('.signup-bottom').addClass('bottom-show');
+	      	}
+	   	}
+	   	lastScrollTop = st;
 
-	   		var st = $(this).scrollTop();
-			   if (st > lastScrollTop){
-			       // downscroll code
-			   } else {
-			      // upscroll code
-			      //$('.signup-bottom').addClass('bottom-show');
-			   }
-			   lastScrollTop = st;
-	   }
+
+		if($(window).scrollTop() + $(window).height() == $(document).height()) {	
+	   		bottom = true;
+	   		$('.signup-bottom').removeClass('bottom-show');
+	   	} else {
+	   		bottom = false;
+	   	}
 	});
 
 });
