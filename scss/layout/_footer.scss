@@ -1,6 +1,7 @@
 footer {
+	//TODO: remove once page has more content
 	position:absolute;
-	bottom:0;
+	top:1200px;
 	width:100%;
 	background:$second-bg-color;
 
@@ -53,6 +54,11 @@ footer {
 
 
 	@media (min-width: 700px) {
+
+		//TODO: remove once page has more content
+		position:absolute;
+		top:1000px;
+
 		ul {
 			padding:25px;
 			display:inline-block;

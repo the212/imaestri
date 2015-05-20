@@ -1,5 +1,5 @@
 .logo {
-	position:absolute;
+	position:fixed;
 	top:0;
 	width:250px;
 	left:50%;
@@ -15,6 +15,7 @@ header {
 	height:100px;
 
 	.nav-trigger {
+		position:fixed;
 		display:inline-block;
 		padding:35px 20px;
 	}

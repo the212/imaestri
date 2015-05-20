@@ -1,5 +1,8 @@
 nav {
-	
+	position:fixed;
+	top:100px;
+	width:100%;
+
 	ul {
 
 		li {
@@ -33,11 +36,11 @@ nav {
 
 
 .subnav {
-	margin-top:42px;
 	width:260px;
 	height:100%;
 	border-right:2px solid $primary-border-color;
-	position:absolute;
+	position:fixed;
+	top:142px;
     margin-left:-260px;
     @include transition(margin-left, .5s, ease-in-out);
     z-index:10;
@@ -75,6 +78,9 @@ nav {
 	border-right:1px solid $primary-border-color;
 	border-bottom:1px solid $primary-border-color;
 	display:none;
+	position:fixed;
+	top:142px;
+	width:100%;
 		
 	input {
 		margin: 4%;
