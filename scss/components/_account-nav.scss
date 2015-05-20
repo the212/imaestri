@@ -88,6 +88,8 @@ nav {
 	display:block !important;
 }
 
+//TODO: add mixin for media queries
+//@include media(large)
 
 @media (min-width: 700px) {
 	nav {

@@ -27,17 +27,26 @@ function mobileNav() {
 	}
 }
 
+/************************************************
+******** FOOTER ********************************/
+function footer() {
+	$('.footer-h2').click(function() {
+		if( $(this).siblings('.footer-link').is(':visible') ) {
+			$(this).siblings('.footer-link').hide();
+		} else {
+			$(this).siblings('.footer-link').show();
+		}
+		$(this).siblings('.footer-link').toggleClass('footer-show');
+		$(this).parent('ul').siblings().children('.footer-link').hide();
+	});
+}
+
 $(function() {
 
 	/******************************************
 	********* Primary Nav ******************/
 	initNav();
 	mobileNav();
-
-	$( window ).resize(function() {
-		mobileNav();
-	});
-
 
 	/******************************************
 	********* My Account Nav ******************/
@@ -55,5 +64,22 @@ $(function() {
 		$(this).parent().siblings().children('a').removeClass('active');
 		$(this).toggleClass('active');
 	});
+
+	/*******************************************
+	************ FOOTER ***********************/
+	footer();
+
+
+	/*******************************************
+	*********** Window Resize ******************/
+	$( window ).resize(function() {
+		mobileNav();
+
+		if ($(window).width() > 700) {
+			$('.footer-link').show();
+		}
+		
+	});
+
 
 });

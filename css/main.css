@@ -100,6 +100,53 @@ header {
     display: inline-block;
     padding: 35px 20px; }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #333333; }
+  footer ul {
+    text-align: center;
+    padding: 0 10%; }
+    footer ul li {
+      display: none;
+      padding-bottom: 5px; }
+      footer ul li.footer-h2 {
+        color: #a3a3a3;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        display: block;
+        border-top: 1px solid #a3a3a3;
+        cursor: pointer; }
+      footer ul li.footer-first {
+        border-top: 0; }
+      footer ul li:last-of-type {
+        padding-bottom: 15px; }
+      footer ul li.footer-show {
+        display: block; }
+      footer ul li a, footer ul li a:active, footer ul li a:visited {
+        text-decoration: none;
+        color: #a3a3a3;
+        text-transform: capitalize;
+        font-size: 0.9em; }
+      footer ul li a:hover {
+        text-decoration: underline;
+        color: #957f68; }
+  @media (min-width: 700px) {
+    footer ul {
+      padding: 25px;
+      display: inline-block;
+      vertical-align: top;
+      padding-right: 40px;
+      text-align: left; }
+      footer ul li {
+        display: block; }
+        footer ul li.footer-h2 {
+          padding-top: 0;
+          border-top: 0; }
+        footer ul li:last-of-type {
+          padding-bottom: 0; } }
+
 .pnav, .pnav-l2, .pnav-l3 {
   width: 100%;
   overflow: hidden;
@@ -160,12 +207,12 @@ header {
     margin-top: 20px; }
 
   .pnav-tall {
-    height: 1000px;
+    height: 800px;
     border-bottom: 2px solid #000; }
 
   .pnav-l2-open {
     display: block;
-    height: 900px;
+    height: 800px;
     position: absolute;
     top: 100px !important;
     z-index: 1000; }
