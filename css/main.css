@@ -109,15 +109,15 @@ footer {
     text-align: center;
     padding: 0 10%; }
     footer ul li {
-      display: none;
-      padding-bottom: 5px; }
+      display: none; }
       footer ul li.footer-h2 {
         color: #a3a3a3;
         padding-bottom: 15px;
         padding-top: 15px;
         display: block;
         border-top: 1px solid #a3a3a3;
-        cursor: pointer; }
+        cursor: pointer;
+        font-size: 1.1em; }
       footer ul li.footer-first {
         border-top: 0; }
       footer ul li:last-of-type {
@@ -128,7 +128,9 @@ footer {
         text-decoration: none;
         color: #a3a3a3;
         text-transform: capitalize;
-        font-size: 0.9em; }
+        font-size: 1em;
+        display: block;
+        padding: 10px; }
       footer ul li a:hover {
         text-decoration: underline;
         color: #957f68; }
@@ -143,9 +145,13 @@ footer {
         display: block; }
         footer ul li.footer-h2 {
           padding-top: 0;
-          border-top: 0; }
+          border-top: 0;
+          font-size: 1em; }
         footer ul li:last-of-type {
-          padding-bottom: 0; } }
+          padding-bottom: 0; }
+        footer ul li a {
+          font-size: 0.9em;
+          padding: 5px; } }
 
 .pnav, .pnav-l2, .pnav-l3 {
   width: 100%;
