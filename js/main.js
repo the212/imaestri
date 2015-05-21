@@ -38,6 +38,8 @@ function footer() {
 		}
 		$(this).siblings('.footer-link').toggleClass('footer-show');
 		$(this).parent('ul').siblings().children('.footer-link').hide();
+
+		$('html, body').scrollTop( $(document).height() );
 	});
 }
 
